@@ -1,11 +1,15 @@
 <?php
 class persona {
+public $nombre;
+public $apellido;
+
+public $edad;
+public $correo;
 
 public function saludar() {
 
-echo "Mi nombre es: <br>";
+return "Hola, Mi nombre es: ". $this->nombre."".$this->apellido ."y tengo ".$this->edad." Mi correo es: ".$this->correo."<br>";
 }
       
 }
 ?>
-|
