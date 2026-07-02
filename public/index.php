@@ -1,5 +1,6 @@
 <?php
 require_once "../class/personas.php";
+require_once "../class/Libro.php";
 
 
 $persona1 = new persona("Juan ", "Devia ", "18  ", "Juandevia@gmail.com");
@@ -8,21 +9,23 @@ $persona2 = new persona("Santiago ", "Hernandez ", "19 ", "santiiii@gmail.com<br
 echo $persona1->saludar();
 echo $persona2->saludar();
 
-require_once "../class/Libro.php";
+
 
 $libro1 = new Libro(
-    "Cien años de soledad",
-    "Gabriel García Márquez",
+    "Cien años de soledad<br>",
+    "Gabriel García Márquez<br>",
     65000
 );
 
 $libro2 = new Libro(
-    "El Principito",
-    "Antoine de Saint-Exupéry",
+    "El Principito<br>",
+    "Antoine de Saint-Exupéry<br>",
     38000
 );
 
-// Mostrar la información de los libros
+$estudiante1 = new estudiante("miguel ","21 ", "juass@gmail.com ","muñoz");
+
 $libro1->mostrarInformacion();
 $libro2->mostrarInformacion();
+echo $estudiante1->saludar();
 ?>  
